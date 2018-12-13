@@ -1,0 +1,224 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    .left-wrapper{
+        float: left;
+        width: 60%;
+        height: 100%;
+        background: url("/images/login_bg.png") no-repeat center;
+        background-size: contain;
+    }
+    .right-wrapper{
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-color: #6058e5;
+        .info-box{
+            width: 67%;
+            margin: 0 auto;
+            position: relative;
+            .reg-title{
+                width: 100%;
+                text-align: center;
+                margin: 23% auto 7.8%;
+                color: #ffffff;
+                font-size: 24px;
+                font-weight: normal;
+            }
+            .find-pwd{
+                width: 100%;
+                text-align: center;
+                margin: 39.7% auto 17.15%;
+                color: #ffffff;
+                font-size: 24px;
+                font-weight: normal;
+            }
+            .headpic{
+                width: 100%;
+                margin: 15.49% auto;
+                text-align: center;
+                img{
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+            .item{
+                min-height: 150*0.02rem;
+                line-height: 150*0.02rem;
+                margin-bottom: 30*0.02rem;
+                color: #ffffff;
+                border-bottom: 1px solid #ffffff;
+                padding-left: 8px;
+                .header-box{
+                    text-align: center;
+                    .upload-pic{
+                        width: 6rem;
+                        height: 6rem;
+                        margin: 0 auto;
+                    }
+                }
+                
+                .desc{
+                    display: inline-block;
+                    min-width: 24%;
+                    font-size: 16px;
+                }
+                .choose{
+                    display: inline-block;
+                    min-height: 40*0.02rem;
+                    line-height: 40*0.02rem;
+                    margin-left: 1rem;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    cursor: pointer;
+                    &:last-child{
+                        margin-left: 1.8rem;
+                    }
+                    input[type="radio"] {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        outline: none;
+                        display: none
+                    }
+                    span{
+                        border-radius: 50%;
+                        margin-right: 0.1rem;
+                        vertical-align: middle;
+                    }
+                    input[type="radio"]+span {
+                        width: 1rem;
+                        height: 1rem;
+                        display: inline-block;
+                        background-color: transparent;
+                        border: 1px solid #ffffff;
+                    }
+                    input[type="radio"]:checked+span {
+                        background-color: #ffffff;
+                    }
+                }
+                .info{
+                    display: inline-block;
+                    line-height: 3rem;
+                    height: 3rem;
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    color: #ffffff;
+                    font-size: 16px;
+                }
+                &.header-item{
+                    border-bottom: none;
+                }
+            }
+            .login-btn{
+                margin: 2rem auto 1.4rem;
+                .sbtn{
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 25px;
+                    text-align: center;
+                    color: #ffffff;
+                    background-color: #3acc6c;
+                    font-size: 20px;
+                    border: none;
+                    outline: none;
+                    &:active{
+                        background-color: #19ca55;
+                    }
+                }
+            }
+            .forget-pwd{
+                margin-top: 1.2rem;
+                text-align: right;
+                a{
+                    font-size: 16px;
+                    color: #ffffff;
+                }
+            }
+            .user-reg{
+                text-align: center;
+                a{
+                    font-size: 16px;
+                    color: #ffffff;
+                }
+            }
+            &.find-box{
+                .item{
+                    height: 4rem;
+                    line-height: 4rem;
+                    padding-left: 0;
+                    margin-bottom: 100*0.02rem;
+                    .info{
+                        line-height: 4rem;
+                        height: 4rem;
+                    }
+                }
+                .login-btn{
+                    margin-top: 3rem;
+                }
+            }
+            .tips{
+                display: none;
+                width: 100%;
+                height: 12.7rem;
+                position: absolute;
+                z-index: 999;
+                top: 50%;
+                left: 0;
+                background-color: #ffffff;
+                border-radius: 12px;
+                color: #333333;
+                .tips-title{
+                    text-align: center;
+                    line-height: 200*0.02rem;
+                    height: 200*0.02rem;
+                    font-size: 22px;
+                }
+                .tips-msg{
+                    width: 80%;
+                    margin: 0 auto;
+                    line-height: 2rem;
+                    font-size: 16px;
+                    text-align: center;
+                }
+                .btn-box{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 150*0.02rem;
+                    line-height: 150*0.02rem;
+                    border-top: 1px solid #dddddd;
+                    a{
+                        float: left;
+                        width: 50%;
+                        text-align: center;
+                        color: #333333;
+                        font-size: 20px;
+                        &.go-msg{
+                            border-right: 1px solid #dddddd;
+                            width: calc(~"50% - 1px");
+                        }
+                    }
+                }
+            }
+            &.reg-box{
+                .item{
+                    min-height: 4rem;
+                    line-height: 4rem;
+                    padding-left: 0;
+                    margin-bottom: 100*0.02rem;
+                    .info{
+                        line-height: 4rem;
+                        height: 4rem;
+                    }
+                }
+                .login-btn{
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
+}
