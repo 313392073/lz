@@ -1,0 +1,283 @@
+.right-wrapper {
+  width: 2.4rem;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.right-wrapper .user-info {
+  height: 1.2rem;
+  position: relative;
+  padding: 0.3rem 0;
+}
+.right-wrapper .user-info .left-pic {
+  position: absolute;
+  left: 0rem;
+  width: 35%;
+}
+.right-wrapper .user-info .right-info {
+  position: absolute;
+  left: 35%;
+  width: 65%;
+}
+.right-wrapper .user-info .headerpic {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+}
+.right-wrapper .list {
+  text-indent: 0.3rem;
+}
+.right-wrapper .list .side-title {
+  font-size: 0.28rem;
+  color: #5c5a5a;
+  margin: 0.2rem 0;
+}
+.right-wrapper .list .menu {
+  border-bottom: 1px solid #666666;
+}
+.right-wrapper .list .menu.after-class {
+  border-bottom: none;
+}
+.right-wrapper .list .menu > li {
+  line-height: 0.5rem;
+  min-height: 0.5rem;
+}
+.right-wrapper .list .menu > li > a {
+  color: #5c5a5a;
+  font-size: 0.24rem;
+  position: relative;
+}
+.right-wrapper .list .menu > li > a .iconfont {
+  margin-left: 0.02rem;
+  font-size: 0.2rem;
+  color: #666666;
+}
+.right-wrapper .list .menu > li.active {
+  background-color: #6C63FF;
+}
+.right-wrapper .list .menu > li.active a {
+  color: #ffffff;
+  font-size: 0.24rem;
+}
+.right-wrapper .list .menu > li .secondary {
+  display: none;
+}
+.right-wrapper .list .menu > li .secondary li {
+  text-indent: 0.55rem;
+}
+.right-wrapper .list .menu > li .secondary li a {
+  font-size: 0.2rem;
+  color: #5c5a5a;
+}
+.right-wrapper .list.loginout a {
+  display: block;
+  width: 90%;
+  border-radius: 4px;
+  height: 0.5rem;
+  margin: 0 auto;
+  line-height: 0.5rem;
+  background-color: #666666;
+  color: #5c5a5a;
+  font-size: 0.24rem;
+  text-align: center;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.wrapper .left-wrapper {
+  width: 100%;
+  min-height: 100%;
+  flex: 1;
+  background-color: #ffffff;
+  border-right: 1px solid #dddddd;
+  position: relative;
+}
+.wrapper .left-wrapper .desc-menu {
+  height: 1.1rem;
+  line-height: 1.1rem;
+  border-bottom: 1px solid #dddddd;
+  font-size: 0.36rem;
+  padding-left: 0.5rem;
+  color: #5c5a5a;
+}
+.wrapper .left-wrapper .main-wrapper {
+  width: 100%;
+}
+.main-wrapper {
+  height: calc(100% - 1.1rem);
+  overflow-y: auto;
+}
+.main-wrapper .title {
+  height: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  font-size: 0.36rem;
+  color: #5c5a5a;
+}
+.main-wrapper .list-box {
+  width: 90.8%;
+  margin: 0 auto 0.6rem;
+  font-size: 0.26rem;
+  color: #5c5a5a;
+}
+.main-wrapper .list-box .list .answerlist {
+  text-indent: 0.8rem;
+  line-height: 0.8rem;
+}
+.main-wrapper .list-box .answerd-req {
+  margin: 0.2rem 0;
+}
+.main-wrapper .list-box .answerd {
+  width: 100%;
+  margin: 0 auto;
+}
+.main-wrapper .list-box .answerd .item {
+  float: left;
+  width: 47.8%;
+  min-height: 0.21rem;
+  margin-right: 4.4%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.main-wrapper .list-box .answerd .item:nth-child(2n) {
+  margin-right: 0;
+}
+.main-wrapper .list-box .answerd .item .order {
+  margin-top: 0.2rem;
+  text-align: center;
+}
+.main-wrapper .list-box .answerd .item .order span {
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #6c63ff;
+  margin: 0.15rem auto;
+  font-size: 0.3rem;
+}
+.main-wrapper .list-box .answerd .item .answerd-box {
+  margin: 0.1rem auto 0.3rem;
+}
+.main-wrapper .list-box .answerd .item .answerd-box .req2 {
+  display: block;
+  width: 70%;
+  margin: 0.7rem auto 0;
+  line-height: 0.5rem;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #5c5a5a;
+  border-bottom: 1px solid #676767;
+}
+.main-wrapper .list-box .answerd .item .answerd-box .choose {
+  float: left;
+  width: 50%;
+  min-height: 0.3rem;
+  line-height: 0.3rem;
+  vertical-align: middle;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+.main-wrapper .list-box .answerd .item .answerd-box .choose input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  display: none;
+}
+.main-wrapper .list-box .answerd .item .answerd-box .choose span {
+  border-radius: 50%;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+.main-wrapper .list-box .answerd .item .answerd-box .choose input[type="radio"] + span {
+  width: 0.3rem;
+  height: 0.3rem;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #dddddd;
+}
+.main-wrapper .list-box .answerd .item .answerd-box .choose input[type="radio"]:checked + span {
+  background-color: #6c63ff;
+  border: 1px solid #6c63ff;
+}
+.main-wrapper .list-box .ansowerd-btn {
+  width: 100%;
+  margin: 0.6rem auto 0.6rem;
+  text-align: center;
+}
+.main-wrapper .list-box .ansowerd-btn .btn {
+  display: block;
+  width: 4rem;
+  height: 1rem;
+  margin: 0 auto;
+  line-height: 1rem;
+  background-color: #6c63ff;
+  color: #ffffff;
+  font-size: 0.36rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+.tips {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tips .main-tips {
+  width: 60%;
+  min-height: 6.8rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+  border-top: 2px solid #6c63ff;
+  text-align: center;
+}
+.tips .main-tips .tip-img {
+  max-width: 2rem;
+}
+.tips .main-tips .tips-title {
+  text-align: center;
+  color: #f32d2d;
+  font-size: 0.36rem;
+  margin: 0.4rem auto;
+}
+.tips .main-tips .tips-msg {
+  font-size: 0.24rem;
+  color: #5c5a5a;
+  line-height: 0.52rem;
+}
+.tips .tips-btn {
+  width: 100%;
+  margin: 0.6rem auto 0.6rem;
+  text-align: center;
+}
+.tips .tips-btn .tbtn {
+  display: block;
+  width: 4rem;
+  height: 1rem;
+  margin: 0 auto;
+  line-height: 1rem;
+  background-color: #6c63ff;
+  color: #ffffff;
+  font-size: 0.36rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+.tips.active {
+  z-index: 999;
+  opacity: 1;
+}
