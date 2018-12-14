@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title><%= title%></title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport" name="viewport">
     <link rel="stylesheet" href="/style/ctool/common.css">
@@ -26,31 +27,43 @@
             <!--注册 -->
             <div class="info-box reg-box">
                 <h3 class="reg-title">新用户注册</h2>
-                <form action="" method="POST">
+                <form action="" method="POST" onsubmit="return checkForm()">
                     <div class="item header-item">
                         <label class="desc">上传头像</label>
                         <div class="header-box">
-                            <img class="upload-pic" src="/images/default.png" alt="">
+                            <img class="upload-pic" src="/images/default.png" alt="default">
+                            <input type="file" name="file" accept="image/png,image/jpg,image/jepg,image/gif" class="upload-file" onchange="uploadImg(this)">
                         </div>
                     </div>
                     <div class="item">
                         <label class="desc">姓名</label>
-                        <input type="text" class="info">
+                        <input type="text" class="info" name="username" id="username">
                     </div>
                     <div class="item">
                         <label class="desc">密码</label>
-                        <input type="text" class="info">
+                        <input type="password" class="info" name="pwd" id="pwd">
                     </div>
                     <div class="item">
                         <label class="desc">确认密码</label>
-                        <input type="text" class="info">
+                        <input type="password" class="info" name="repwd" id="repwd">
                     </div>
                     <div class="login-btn">
                         <input type="submit" class="sbtn" value="确认注册">
                     </div>
                 </form>
+                <div class="tips">
+                    <p class="tips-title">温馨提示</p>
+                    <p class="tips-msg">验证邮箱已发送到你的邮箱，请注意查收验证邮箱已发送到你的</p>
+                    <div class="btn-box">
+                        <a href="javascript:void(0)" class="go-msg" onclick="hideTip()">确定</a>
+                        <a href="javascript:void(0)" class="closed" onclick="hideTip()">关闭</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="/js/tool/landscape.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/reg.js"></script>
 </body>
 </html>

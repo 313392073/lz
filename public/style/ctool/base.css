@@ -1,0 +1,106 @@
+.right-wrapper {
+  width: 2.4rem;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.right-wrapper .user-info {
+  height: 1.2rem;
+  position: relative;
+  padding: 0.3rem 0;
+}
+.right-wrapper .user-info .left-pic {
+  position: absolute;
+  left: 0rem;
+  width: 35%;
+}
+.right-wrapper .user-info .right-info {
+  position: absolute;
+  left: 35%;
+  width: 65%;
+}
+.right-wrapper .user-info .headerpic {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+}
+.right-wrapper .list {
+  text-indent: 0.3rem;
+}
+.right-wrapper .list .side-title {
+  font-size: 0.28rem;
+  color: #333333;
+  margin: 0.2rem 0;
+}
+.right-wrapper .list .menu {
+  border-bottom: 1px solid #666666;
+}
+.right-wrapper .list .menu.after-class {
+  border-bottom: none;
+}
+.right-wrapper .list .menu > li {
+  line-height: 0.5rem;
+  min-height: 0.5rem;
+}
+.right-wrapper .list .menu > li > a {
+  color: #333333;
+  font-size: 0.24rem;
+  position: relative;
+}
+.right-wrapper .list .menu > li > a .iconfont {
+  margin-left: 0.02rem;
+  font-size: 0.2rem;
+  color: #666666;
+}
+.right-wrapper .list .menu > li.active {
+  background-color: #6C63FF;
+}
+.right-wrapper .list .menu > li.active a {
+  color: #ffffff;
+  font-size: 0.24rem;
+}
+.right-wrapper .list .menu > li .secondary {
+  display: none;
+}
+.right-wrapper .list .menu > li .secondary li {
+  text-indent: 0.55rem;
+}
+.right-wrapper .list .menu > li .secondary li a {
+  font-size: 0.2rem;
+  color: #333333;
+}
+.right-wrapper .list.loginout a {
+  display: block;
+  width: 90%;
+  border-radius: 4px;
+  height: 0.5rem;
+  margin: 0 auto;
+  line-height: 0.5rem;
+  background-color: #666666;
+  color: #333333;
+  font-size: 0.24rem;
+  text-align: center;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.wrapper .left-wrapper {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  background-color: #ffffff;
+  border-right: 1px solid #dddddd;
+}
+.wrapper .left-wrapper .desc-menu {
+  height: 1.1rem;
+  line-height: 1.1rem;
+  border-bottom: 1px solid #dddddd;
+  font-size: 0.36rem;
+  padding-left: 0.5rem;
+}
+.wrapper .left-wrapper .main-wrapper {
+  width: 100%;
+  min-height: 100%;
+}

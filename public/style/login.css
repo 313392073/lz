@@ -54,12 +54,20 @@
   padding-left: 8px;
 }
 .wrapper .right-wrapper .info-box .item .header-box {
-  text-align: center;
-}
-.wrapper .right-wrapper .info-box .item .header-box .upload-pic {
   width: 6rem;
   height: 6rem;
   margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+}
+.wrapper .right-wrapper .info-box .item .header-box .upload-pic {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+}
+.wrapper .right-wrapper .info-box .item .header-box .upload-file {
+  display: none;
 }
 .wrapper .right-wrapper .info-box .item .desc {
   display: inline-block;

@@ -1,0 +1,87 @@
+.right-wrapper{
+    width: 2.4rem;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    .user-info{
+        height: 1.2rem;
+        position: relative;
+        padding: 0.3rem 0;
+        .left-pic{
+            position: absolute;
+            left: 0rem;
+            width: 35%;
+        }
+        .right-info{
+            position: absolute;
+            left: 35%;
+            width: 65%;
+        }
+       .headerpic{
+           width: 0.65rem;
+           height: 0.65rem;
+           border-radius: 50%;
+       } 
+    }
+    .list{
+        text-indent: 0.3rem;
+        .side-title{
+            font-size: 0.28rem;
+            color: #333333;
+            margin: 0.2rem 0;
+        }
+        .menu{
+            border-bottom: 1px solid #666666;
+            &.after-class{
+                border-bottom: none;
+            }
+            &>li{
+                line-height: 0.5rem;
+                min-height: 0.5rem;
+                &>a{
+                    color: #333333;
+                    font-size: 0.24rem;
+                    position: relative;
+                    .iconfont{
+                        margin-left: 0.02rem;
+                        font-size: 0.2rem;
+                        color: #666666;
+                    }
+
+                }
+                &.active{
+                    background-color: #6C63FF;
+                    a{
+                        color: #ffffff;
+                        font-size: 0.24rem;
+                    }
+                }
+                .secondary{
+                    display: none;
+                    li{
+                        text-indent: 0.55rem;
+                        a{
+                            font-size: 0.2rem;
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+        }
+        &.loginout{
+            a{
+                display: block;
+                width: 90%;
+                border-radius: 4px;
+                height: 0.5rem;
+                margin: 0 auto;
+                line-height: 0.5rem;
+                background-color: #666666;
+                color: #333333;
+                font-size: 0.24rem;
+                text-align: center;
+            }
+        }
+    }
+    
+}
