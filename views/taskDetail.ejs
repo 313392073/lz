@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title><%= title%></title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport"
+    name="viewport">
+  <script src="/js/tool/rem.js"></script>
+  <link rel="stylesheet" href="/style/ctool/common.css">
+  <link rel="stylesheet" href="/style/taskDetail.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <!--[if !IE]> -->
+  <script type="text/javascript" src="/js/tool/jquery.js"></script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+          <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+      <![endif]-->
+  <!--[if lt IE 9]>
+          <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <script type="text/javascript" src="/js/tool/layer/layer.js"></script>
+</head>
+<div class="wrapper">
+  <!-- 主内容区域 -->
+  <div class="left-wrapper">
+    <div class="desc-menu">寻找棱锥</div>
+    <!-- 主要内容 -->
+    <div class="main-wrapper">
+        <h3 class="title">任务详情</h3>
+        <div class="main-box">
+            <div class="info-box clearfix">
+                <div class="info-left">
+                    <p class="desc">任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情</p>
+                    <p class="info-list">任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情</p>
+                    <p class="info-list">任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情</p>
+                    <p class="info-list">任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情任务详情</p>
+                </div>
+                <div class="info-right">
+                    <img src="/images/group-pic.png" alt="group-pic">
+                </div>
+            </div>
+            <h3 class="title">任务分组</h3>
+            <div class="info-group clearfix">
+                <%for(var i=0;i<4;i++) {%>
+                <div class="item">
+                    <p class="item-title">A组</p>
+                    <div class="item-member"></div>
+                    <div class="item-add"></div>
+                </div>
+                <%}%>
+            </div>
+            <div class="back-btn"><button class="btn">任务布置</button></div>
+        </div>
+        
+    </div>
+  </div>
+  <!-- 右边导航部分 -->
+  <%-include("share/sidebar")%>
+</div>
+<script src="/js/tool/landscape.js"></script>
+<body>
+
+</body>
+
+</html>

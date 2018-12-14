@@ -1,0 +1,82 @@
+@import './ctool/base.less';
+@fcolor:#5c5a5a;
+.main-wrapper{
+    height: calc(~"100% - 1.1rem");
+    overflow-y:auto; 
+    .title{
+        height: 80*0.02rem;
+        line-height: 80*0.02rem;
+        text-align: center;
+        font-size: 0.36rem;
+        color: @fcolor;
+    }
+    .main-box{
+        width: 78.8%;
+        margin: 0 auto 0.6rem;
+        .info-box{
+            width: 100%;
+            border-bottom: 1px solid #dddddd;
+            .info-left{
+                float: left;
+                padding-bottom: 0.1rem;
+                width: 2.7rem;
+                margin-right: 0.3rem;
+                img{
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                }
+                span{
+                    display: inline-block;
+                    font-size: 0.5rem;
+                    color: #39cc6c;
+                    margin-left: 0.3rem;
+                    padding-right: 0.4rem;
+                    border-right: 1px solid #eeeeee;
+                    vertical-align: middle;
+                }
+            }
+            .info-right{
+                float: right;
+                width: calc(~"100% - 3rem");
+                .info-title{
+                    font-size: 0.3rem;
+                    color: @fcolor;
+                    line-height: 0.52rem;
+                }
+                .info-time{
+                    font-size: 0.24rem;
+                    color: @fcolor;
+                }
+            }
+        }
+        .video-box{
+            width: 100%;
+            height: 400*0.02rem;
+            background-color: #39cc6c;
+            margin-top: 0.25rem;
+            video{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .back-btn{
+            width: 100%;
+            margin: 0.4rem auto 0.6rem;
+            text-align: center;
+            .btn{
+                display: block;
+                width: 200*0.02rem;
+                height: 50*0.02rem;
+                margin: 0 auto;
+                line-height: 50*0.02rem;
+                background-color: #6c63ff;
+                color: #ffffff;
+                font-size: 0.36rem;
+                border-radius: 30px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}

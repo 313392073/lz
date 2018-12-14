@@ -1,0 +1,93 @@
+@import './ctool/base.less';
+@fcolor:#5c5a5a;
+.main-wrapper{
+    height: calc(~"100% - 1.1rem");
+    overflow-y:auto; 
+    .title{
+        height: 80*0.02rem;
+        line-height: 80*0.02rem;
+        text-align: center;
+        font-size: 0.36rem;
+        color: @fcolor;
+    }
+    .main-box{
+        width: 90.78%;
+        margin: 0 auto 0.6rem;
+        .info-box{
+            width: 100%;
+            .info-left{
+                float: left;
+                width: 60%;
+                margin-right: 3%;
+                p{
+                    font-size: 0.26rem;
+                    color: @fcolor;
+                    line-height: 0.52rem;
+                }
+            }
+            .info-right{
+                float: right;
+                width: 37%;
+                padding-top: 0.1rem;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .info-group{
+            width: 100%;
+            margin: 0.3rem auto;
+            .item{
+                float: left;
+                width: 23.5%;
+                margin-right: 2%;
+                box-shadow: 0 0 5px 1px rgba(0,0,0, 0.1);
+                position: relative;
+                padding-bottom: 0.7rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+                .item-title{
+                    font-size: 0.36rem;
+                    color: #333333;
+                    line-height: 0.6rem;
+                    height: 0.6rem;
+                    text-align: center;
+                }
+                .item-member{
+                    min-height: 1.5rem;
+                }
+                .item-add{
+                    height: 0.6rem;
+                    width: 0.6rem;
+                    position: absolute;
+                    bottom: 0.05rem;
+                    left: 50%;
+                    margin-left: -0.3rem;
+                    border-radius: 50%;
+                    background: url("../images/add-meb.png") no-repeat center;
+                    background-size: contain;
+                }
+            }
+        }
+        .back-btn{
+            width: 100%;
+            margin: 0.4rem auto 0.6rem;
+            text-align: center;
+            .btn{
+                display: block;
+                width: 200*0.02rem;
+                height: 50*0.02rem;
+                margin: 0 auto;
+                line-height: 50*0.02rem;
+                background-color: #6c63ff;
+                color: #ffffff;
+                font-size: 0.36rem;
+                border-radius: 30px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}
