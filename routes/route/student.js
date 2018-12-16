@@ -77,4 +77,46 @@ module.exports = function(router){
             title:'课件管理'
         })
     })
+
+    // 课后练习
+    router.get('/praafterclass.html',function(req,res){
+        res.render('PraafterClass',{
+            title:'课后练习'
+        })
+    })
+
+    // 课堂学习
+    router.get('/classlearning.html',function(req,res){
+        res.render('ClassLearning',{
+            title:'课堂学习'
+        })
+    })
+
+    // 课堂学习成绩报告(学生) (差一个echart柱状表)
+    router.get('/learningreport.html',function(req,res){
+        res.render('learningReport',{
+            title:'课堂学习成绩报告'
+        })
+    })
+
+    // 在线测试成绩报告(学生) ()
+    router.get('/testreport.html',function(req,res){
+        res.render('testReport',{
+            title:'在线测试成绩报告'
+        })
+    })
+
+    // 在线测试学生练习结果(学生) (差一个echart柱状表)
+    router.get('/practicereport.html',function(req,res){
+        res.render('PracticReport',{
+            title:'在线测试学生练习结果'
+        })
+    })
+
+     // 作业结果(学生) (差2个echart柱状图)
+     router.get('/jobresults.html',function(req,res){
+        res.render('jobResults',{
+            title:'在线测试成绩报告'
+        })
+    })
 }
