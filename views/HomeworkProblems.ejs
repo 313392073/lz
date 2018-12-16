@@ -10,7 +10,7 @@
   <script src="/js/tool/rem.js"></script>
   <link rel="stylesheet" href="/style/ctool/common.css">
   <link rel="stylesheet" href="/style/ctool/iconfont.css">
-  <link rel="stylesheet" href="/style/sideAreaFormula.css">
+  <link rel="stylesheet" href="/style/HomeworkProblems.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <!--[if !IE]> -->
   <script type="text/javascript" src="/js/tool/jquery.js"></script>
@@ -27,56 +27,24 @@
 <div class="wrapper">
   <!-- 主内容区域 -->
   <div class="left-wrapper">
-    <div class="desc-menu">寻找棱锥</div>
+    <div class="desc-menu">课后习题</div>
     <!-- 主要内容 -->
     <div class="main-wrapper">
-        <h3 class="title">侧面积公式</h3>
+        <h3 class="title">表面积公式</h3>
         <div class="list-box">
-            <% for(var i=0;i<2;i++) {%>
-              <div class="list">
-                  <p class="list-req"><span>题目0<%= i+1%></span>：正三棱锥的高为6,底面边长为4,求它的侧面积应该用什么公式？</p>
-                  <div class="answer-box clearfix">
-                      <div class="answerlist-box">
-                          <div class="answerlist">(A):</div>
-                          <div class="answerlist">(B):</div>
-                          <div class="answerlist">(C):</div>
-                          <div class="answerlist">(D):</div>
-                      </div>
-                      <div>
-                        <img src="" alt="">
-                      </div>
-                  </div>
-                </div>
-          <%}%>
+        <% for(var i=0;i<5;i++) {%>
+            <p class="list-req"><span>题目0<%= i+1%></span>：正三棱锥的高为6,底面边长为4,求它的侧面积应该用什么公式？</p>
+        <%}%>
           <p class="list-req answerd-req"><span>答案：</span></p>
           <div class="answerd clearfix">
+            <% for(var i=0;i<5;i++) {%>
               <div class="item">
-                  <p class="order"><span>01</span></p>
-                  <div class="answerd-box clearfix">
-                      <label class="choose">
-                          <input type="radio" name="req1" value="A" checked>
-                          <span></span>A
-                        </label>
-                        <label class="choose">
-                          <input type="radio" name="req1" value="B">
-                          <span></span>B
-                        </label>
-                        <label class="choose">
-                          <input type="radio" name="req1" value="C">
-                          <span></span>C
-                        </label>
-                        <label class="choose">
-                          <input type="radio" name="req1" value="D">
-                          <span></span>D
-                        </label>
-                  </div>
+                    <p class="order"><span>0<%= i+1%></span></p>
+                    <div class="answerd-box">
+                        <input type="text" name="req2" placeholder="请输入答案" class="req2">
+                    </div>
               </div>
-              <div class="item">
-                  <p class="order"><span>02</span></p>
-                  <div class="answerd-box">
-                      <input type="text" name="req2" placeholder="请输入答案" class="req2">
-                  </div>
-              </div>
+              <%}%>
           </div>
           <div class="ansowerd-btn"><button class="btn">提交答案</button></div>
         </div>

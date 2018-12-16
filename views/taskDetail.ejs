@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <title><%= title%></title>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport"
-    name="viewport">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"> -->
   <script src="/js/tool/rem.js"></script>
   <link rel="stylesheet" href="/style/ctool/common.css">
+  <link rel="stylesheet" href="/style/ctool/iconfont.css">
   <link rel="stylesheet" href="/style/taskDetail.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <!--[if !IE]> -->
@@ -47,20 +47,46 @@
                 <%for(var i=0;i<4;i++) {%>
                 <div class="item">
                     <p class="item-title">A组</p>
-                    <div class="item-member"></div>
+                    <div class="item-member clearfix">
+                        <%for(var k=0;k<10;i++){%>
+                        <div class="tips-item">
+                            <i class="iconfont icon-close_icon"></i>
+                            <img src="/images/default.png" alt="">
+                            <p>流星雨</p>
+                        </div>
+                        <%}%>
+                    </div>
                     <div class="item-add"></div>
                 </div>
                 <%}%>
             </div>
             <div class="back-btn"><button class="btn">任务布置</button></div>
         </div>
-        
+        <div class="tips-wrapper">
+            <div class="tips-box">
+                <p class="tips-title">组员管理<i class="iconfont icon-guanbi1"></i></p>
+                <div class="tips-main clearfix">
+                    <%for(var i=0;i<10;i++){%>
+                    <div class="tips-item">
+                        <i class="iconfont icon-close_icon"></i>
+                        <img src="/images/default.png" alt="">
+                        <p>流星雨</p>
+                    </div>
+                    <%}%>
+                </div>
+                <div class="tips-btns">
+                    <a href="">清空选择</a>
+                    <a href="">确定选择</a>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
   <!-- 右边导航部分 -->
   <%-include("share/sidebar")%>
 </div>
 <script src="/js/tool/landscape.js"></script>
+<script src="/js/common.js"></script>
 <body>
 
 </body>

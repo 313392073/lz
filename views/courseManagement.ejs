@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title><%= title%></title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport"
+    name="viewport">
+  <script src="/js/tool/rem.js"></script>
+  <link rel="stylesheet" href="/style/ctool/common.css">
+  <link rel="stylesheet" href="/style/ctool/iconfont.css">
+  <link rel="stylesheet" href="/style/courseManagement.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <!--[if !IE]> -->
+  <script type="text/javascript" src="/js/tool/jquery.js"></script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+          <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+      <![endif]-->
+  <!--[if lt IE 9]>
+          <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <script type="text/javascript" src="/js/tool/layer/layer.js"></script>
+</head>
+<div class="wrapper">
+  <!-- 主内容区域 -->
+  <div class="left-wrapper">
+    <div class="desc-menu">课后习题</div>
+    <!-- 主要内容 -->
+    <div class="main-wrapper clearfix">
+       <div class="left-side">
+            <div class="search-box clearfix">
+                <i class="iconfont icon-xuanzhong"></i>
+                <input type="text" placeholder="搜索全部">
+            </div>
+            <ul class="main-menu">
+                <li class="active">
+                    <a href="">
+                        <i class="iconfont icon-xin"></i>
+                        <span>全部</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-xin"></i>
+                        <span>文档</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-xin"></i>
+                        <span>图片</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-xin"></i>
+                        <span>视频</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-xin"></i>
+                        <span>音乐</span>
+                    </a>
+                </li>
+            </ul>
+       </div>
+       <div class="right-main">
+            <p class="main-title"> 
+                <a href="" class="active upload-btn"><i class="iconfont icon-shangchuan1"></i>上传</a>
+                <a href=""><i class="iconfont icon-shanchu"></i>删除</a>
+            </p>
+            <div class="main-info">
+                <p class="info-title">全部</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>名称</th>
+                            <th>修改时间<i></i></th>
+                            <th>大小</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <%for(var i=0;i<4;i++){%>
+                        <tr>
+                            <td class="td-check">
+                                <label class="choose"><input type="checkbox" name="" value="student"><span>√</span> </label>
+                                <span>走进棱锥教学。ppt</span>
+                            </td>
+                            <td>
+                                2018年12月16日 14：12
+                            </td>
+                            <td>12.6M</td>
+                        </tr>
+                        <%}%>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tips-btn"><button class="sbtn">确认发送</button></div>
+       </div>
+    </div>
+    <div class="tips">
+        <div class="main-tips">
+            <i class="iconfont icon-guanbi1"></i>
+          <img class="tip-img" src="/images/default.png" alt="">
+          <p class="tips-title">推送成功</p>
+          <div class="tips-msg">
+              <p>你已成功推送 <span>2</span>个文件！</p>
+          </div>
+          <div class="tips-btn"><button class="cbtn tbtn">好的</button></div>
+        </div>
+    </div>
+  </div>
+  <!-- 右边导航部分 -->
+  <%-include("share/sidebar")%>
+</div>
+<script src="/js/tool/landscape.js"></script>
+<script src="/js/common.js"></script>
+<script type="text/javascript">
+  $(".btn").on("click",function(){
+    var answer1 =  $.trim($('input:radio[name="req1"]:checked').val());
+    var answer2 = $.trim($(".req2").val());
+    $.ajax({
+      type:'post',
+      url:'',
+      dataType:'json',
+      data:{'answer1':answer1,'answer2':answer1},
+      success:function(res){
+        if(res){
+
+        }else{
+          
+        }
+      }
+    })
+  })
+  //继续答题
+  $(".gbtn").on("click",function(){
+    $(".tips").removeClass('active');
+  })
+  //查看成绩
+  $(".cbtn").on("click",function(){
+    window.location.href = '/login.html'
+  })
+</script>
+<body>
+
+</body>
+
+</html>

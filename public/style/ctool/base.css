@@ -1,5 +1,5 @@
 .right-wrapper {
-  width: 2.4rem;
+  width: 3.08rem;
   height: 100%;
   box-sizing: border-box;
   background-color: #fff;
@@ -39,8 +39,8 @@
   border-bottom: none;
 }
 .right-wrapper .list .menu > li {
-  line-height: 0.5rem;
-  min-height: 0.5rem;
+  line-height: 0.48rem;
+  min-height: 0.48rem;
 }
 .right-wrapper .list .menu > li > a {
   color: #5c5a5a;
@@ -95,10 +95,10 @@
   position: relative;
 }
 .wrapper .left-wrapper .desc-menu {
-  height: 1.1rem;
-  line-height: 1.1rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
   border-bottom: 1px solid #dddddd;
-  font-size: 0.36rem;
+  font-size: 0.352rem;
   padding-left: 0.5rem;
   color: #5c5a5a;
 }

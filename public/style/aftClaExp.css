@@ -118,78 +118,75 @@
   overflow-y: auto;
 }
 .main-wrapper .title {
-  height: 0.848rem;
-  line-height: 0.848rem;
+  height: 1.28rem;
+  line-height: 1.28rem;
   text-align: center;
   font-size: 0.352rem;
   color: #5c5a5a;
 }
 .main-wrapper .main-box {
-  width: 78.8%;
+  width: 86.175%;
   margin: 0 auto 0.56rem;
 }
-.main-wrapper .main-box .info-box {
+.main-wrapper .main-box .main-top-box {
   width: 100%;
-  border-bottom: 1px solid #dddddd;
+  min-height: 5rem;
 }
-.main-wrapper .main-box .info-box .info-left {
+.main-wrapper .main-box .main-top-box .req-box {
   float: left;
-  padding-bottom: 0.1rem;
-  width: 2.7rem;
-  margin-right: 0.3rem;
-}
-.main-wrapper .main-box .info-box .info-left img {
-  width: 1.04rem;
-  height: 1.04rem;
-  border-radius: 50%;
-}
-.main-wrapper .main-box .info-box .info-left span {
-  display: inline-block;
-  font-size: 0.5rem;
-  color: #39cc6c;
-  margin-left: 0.3rem;
-  padding-right: 0.4rem;
-  border-right: 1px solid #eeeeee;
-  vertical-align: middle;
-}
-.main-wrapper .main-box .info-box .info-right {
-  float: right;
-  width: calc(100% - 3rem);
-}
-.main-wrapper .main-box .info-box .info-right .info-title {
-  font-size: 0.3rem;
+  width: 63%;
+  padding: 0 0.32rem;
+  font-size: 0.24rem;
   color: #5c5a5a;
-  line-height: 0.52rem;
+  line-height: 0.4rem;
 }
-.main-wrapper .main-box .info-box .info-right .info-time {
+.main-wrapper .main-box .main-top-box .req-box .formula {
+  margin-top: 0.4rem;
+}
+.main-wrapper .main-box .main-top-box .req-img {
+  float: left;
+  width: 37%;
+}
+.main-wrapper .main-box .main-top-box .req-img img {
+  max-width: 90%;
+  height: auto;
+}
+.main-wrapper .main-box .answer-box {
   font-size: 0.24rem;
   color: #5c5a5a;
 }
-.main-wrapper .main-box .video-box {
-  width: 100%;
-  height: 6.632rem;
-  background-color: #39cc6c;
-  margin-top: 0.32rem;
+.main-wrapper .main-box .answer-box .answer-input {
+  width: 80%;
+  margin: 0.24rem auto;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  border-bottom: 1px solid #b7c0cd;
 }
-.main-wrapper .main-box .video-box video {
-  width: 100%;
-  height: 100%;
-}
-.main-wrapper .main-box .back-btn {
-  width: 100%;
-  margin: 0.44rem auto 0;
-  text-align: center;
-}
-.main-wrapper .main-box .back-btn .btn {
+.main-wrapper .main-box .answer-box .answer-input input {
   display: block;
-  width: 4.08rem;
-  height: 0.72rem;
-  margin: 0 auto;
-  line-height: 0.72rem;
-  background-color: #6c63ff;
-  color: #ffffff;
-  font-size: 0.36rem;
-  border-radius: 0.72rem;
+  width: 100%;
+  padding: 0.08rem;
+  text-align: center;
   border: none;
   outline: none;
+  font-size: 0.24rem;
+  color: #5c5a5a;
+}
+.main-wrapper .main-box .btn-box {
+  width: 100%;
+  margin: 0.8rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrapper .main-box .btn-box a {
+  width: 2.64rem;
+  height: 0.832rem;
+  line-height: 0.832rem;
+  background-color: #6c63ff;
+  color: #ffffff;
+  font-size: 0.28rem;
+  text-align: center;
+  margin: auto;
+  border-radius: 0.832rem;
 }
