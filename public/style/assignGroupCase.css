@@ -113,3 +113,68 @@
 .wrapper .left-wrapper .main-wrapper {
   width: 100%;
 }
+.main-wrapper {
+  height: calc(100% - 1.6rem);
+  overflow-y: auto;
+}
+.main-wrapper .title {
+  height: 1.136rem;
+  line-height: 1.136rem;
+  text-align: center;
+  font-size: 0.352rem;
+  color: #5c5a5a;
+}
+.main-wrapper .main-box {
+  width: 86%;
+  margin: 0 auto 0.56rem;
+}
+.main-wrapper .main-box .group-wrapper {
+  width: 100%;
+}
+.main-wrapper .main-box .group-wrapper .item {
+  float: left;
+  width: calc(48.3% - 2px);
+  margin-right: 3.4%;
+  margin-bottom: 0.4rem;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+.main-wrapper .main-box .group-wrapper .item:nth-child(2n) {
+  margin-right: 0;
+}
+.main-wrapper .main-box .group-wrapper .item .item-left {
+  float: left;
+  width: calc(26.56% - 1px);
+  height: 100%;
+  border-right: 1px dashed #e6e6e6;
+  font-size: 0.384rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.92rem;
+}
+.main-wrapper .main-box .group-wrapper .item .item-right {
+  float: right;
+  width: 73.44%;
+  text-align: center;
+  font-size: 0.272rem;
+  padding: 0.32rem 0.16rem;
+}
+.main-wrapper .main-box .group-wrapper .item .item-right .grouper {
+  width: 100%;
+  margin-bottom: 0.24rem;
+}
+.main-wrapper .main-box .group-wrapper .item .item-right .grouper span {
+  position: relative;
+  left: -0.32rem;
+}
+.main-wrapper .main-box .group-wrapper .item .item-right img {
+  width: 1.12rem;
+  height: 1.12rem;
+  margin-bottom: 0.12rem;
+}
+.main-wrapper .main-box .group-wrapper .item .item-right .sub-item {
+  float: left;
+  width: 33%;
+  margin-bottom: 0.24rem;
+}

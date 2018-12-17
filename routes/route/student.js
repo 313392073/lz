@@ -119,4 +119,26 @@ module.exports = function(router){
             title:'在线测试成绩报告'
         })
     })
+
+    // 课堂学习测试结果统计报告
+    router.get('/classtotalresult.html',function(req,res){
+        res.render('classTotalResult',{
+            title:'课堂学习测试结果统计报告'
+        })
+    })
+
+     // 分配小组
+     router.get('/assigngroup.html',function(req,res){
+        res.render('assignGroup',{
+            title:'分配小组'
+        })
+    })
+
+    // 小组分配情况
+    router.get('/assigngroupcase.html',function(req,res){
+        res.render('assignGroupCase',{
+            title:'小组分配情况'
+        })
+    })
+
 }
