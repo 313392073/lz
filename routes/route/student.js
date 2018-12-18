@@ -141,4 +141,24 @@ module.exports = function(router){
         })
     })
 
+     // 老师端作业分享模板
+     router.get('/teahomeworksharebase.html',function(req,res){
+        res.render('teaHomeworkSharebase',{
+            title:'老师端作业分享'
+        })
+    })
+
+    // 老师端作业分享1
+    router.get('/teahomeworkshare.html',function(req,res){
+        res.render('teaHomeworkShare',{
+            title:'老师端作业分享'
+        })
+    })
+
+     // 老师端作业分享2
+     router.get('/teasharedetail.html',function(req,res){
+        res.render('teaShareDetail',{
+            title:'老师端作业分享'
+        })
+    })
 }

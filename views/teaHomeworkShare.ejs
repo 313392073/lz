@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title><%= title%></title>
@@ -9,7 +8,7 @@
   <script src="/js/tool/rem.js"></script>
   <link rel="stylesheet" href="/style/ctool/common.css">
   <link rel="stylesheet" href="/style/ctool/iconfont.css">
-  <link rel="stylesheet" href="/style/assignGroupCase.css">
+  <link rel="stylesheet" href="/style/teahomeworkshare.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <!--[if !IE]> -->
   <script type="text/javascript" src="/js/tool/jquery.js"></script>
@@ -29,28 +28,36 @@
     <div class="desc-menu">寻找棱锥</div>
     <!-- 主要内容 -->
     <div class="main-wrapper">
-        <h3 class="title">分配小组</h3>
         <div class="main-box">
             <div class="group-wrapper clearfix">
                 <%for(var i=0;i<4;i++){%>
                 <div class="item clearfix">
-                    <div class="item-left">A组</div>
-                    <div class="item-right">
-                        <div class="grouper">
-                            <img src="/images/default.png" alt="default">
-                            <p><span>组长</span> </span>流星雨</p>
-                        </div>
-                       
-                        <div class="groupers-box clearfix">
-                            <%for(var k=0;k<3;k++){%>
-                            <div class="sub-item">
+                    <p class="group-name">A组</p>
+                    <%for(var k=0;k<4;k++){%>
+                    <div class="sub-item">
+                        <div class="not-upload"><img src="/images/noupload.png" alt="noupload"></div>
+                        <div class="detail-desc clearfix">
+                            <div class="desc-left">
                                 <img src="/images/default.png" alt="default">
                                 <p>流星雨</p>
                             </div>
-                            <%}%>
+                            <div class="desc-right">
+                                <p class="desc-text">整体为三棱锥形结构，其外观简洁、别致，并且周向侧面均具有展示孔，起到了展示作用</p>
+                            </div>
                         </div>
-                       
+                        <div class="detail-btns">
+                            <a href="" class="share">查看分享</a>
+                            <a href=""><i class="iconfont icon-xin"></i>2</a>
+                            <a href=""><i class="iconfont icon-xuanzhong"></i>2</a>
+                        </div>
+                        <div class="detail-imgs">
+                            <img src="/images/group-pic.png" alt="group-pic">
+                            <img src="/images/group-pic.png" alt="group-pic">
+                            <img src="/images/group-pic.png" alt="group-pic">
+                            <img src="/images/group-pic.png" alt="group-pic">
+                        </div>
                     </div>
+                    <%}%>
                 </div>
                 <%}%>
             </div>
