@@ -1,5 +1,5 @@
 .right-wrapper {
-  width: 2.4rem;
+  width: 3.08rem;
   height: 100%;
   box-sizing: border-box;
   background-color: #fff;
@@ -25,32 +25,40 @@
   border-radius: 50%;
 }
 .right-wrapper .list {
-  text-indent: 0.3rem;
+  text-indent: 0.56rem;
 }
 .right-wrapper .list .side-title {
   font-size: 0.28rem;
   color: #5c5a5a;
   margin: 0.2rem 0;
 }
-.right-wrapper .list .menu {
-  border-bottom: 1px solid #666666;
-}
-.right-wrapper .list .menu.after-class {
-  border-bottom: none;
+.right-wrapper .list .side-title.first-title {
+  margin-top: 1.2rem;
 }
 .right-wrapper .list .menu > li {
-  line-height: 0.5rem;
-  min-height: 0.5rem;
+  line-height: 0.48rem;
+  min-height: 0.48rem;
+  margin: 0.03248rem auto;
 }
 .right-wrapper .list .menu > li > a {
   color: #5c5a5a;
   font-size: 0.24rem;
+  display: block;
+  width: 2.04rem;
+  margin: 0 auto;
   position: relative;
+  text-indent: 0;
 }
 .right-wrapper .list .menu > li > a .iconfont {
-  margin-left: 0.02rem;
+  position: absolute;
+  right: 0;
+  top: 0;
   font-size: 0.2rem;
   color: #666666;
+}
+.right-wrapper .list .menu > li > a.tabborder-bottom {
+  padding-bottom: 0.12rem;
+  border-bottom: 1px solid #666666;
 }
 .right-wrapper .list .menu > li.active {
   background-color: #6C63FF;
@@ -63,7 +71,7 @@
   display: none;
 }
 .right-wrapper .list .menu > li .secondary li {
-  text-indent: 0.55rem;
+  padding-left: 0.28rem;
 }
 .right-wrapper .list .menu > li .secondary li a {
   font-size: 0.2rem;
@@ -95,28 +103,34 @@
   position: relative;
 }
 .wrapper .left-wrapper .desc-menu {
-  height: 1.1rem;
-  line-height: 1.1rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
   border-bottom: 1px solid #dddddd;
-  font-size: 0.36rem;
+  font-size: 0.352rem;
   padding-left: 0.5rem;
   color: #5c5a5a;
 }
 .wrapper .left-wrapper .main-wrapper {
   width: 100%;
+<<<<<<< HEAD
   height: calc(100% - 1.1rem);
+=======
+}
+.main-wrapper {
+  height: calc(100% - 1.6rem);
+>>>>>>> cef82dc52fd8b3c77f3c49d1a014f8e799c326bf
   overflow-y: auto;
 }
 .main-wrapper .title {
-  height: 1.6rem;
-  line-height: 1.6rem;
+  height: 0.848rem;
+  line-height: 0.848rem;
   text-align: center;
-  font-size: 0.36rem;
+  font-size: 0.352rem;
   color: #5c5a5a;
 }
 .main-wrapper .list-box {
   width: 90.8%;
-  margin: 0 auto 0.6rem;
+  margin: 0 auto 0.56rem;
   font-size: 0.26rem;
   color: #5c5a5a;
 }
@@ -148,9 +162,9 @@
 }
 .main-wrapper .list-box .answerd .item .order span {
   display: block;
-  width: 0.7rem;
-  height: 0.7rem;
-  line-height: 0.7rem;
+  width: 0.68rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
   border-radius: 50%;
   color: #ffffff;
   background-color: #6c63ff;
@@ -206,15 +220,15 @@
 }
 .main-wrapper .list-box .ansowerd-btn {
   width: 100%;
-  margin: 0.6rem auto 0.6rem;
+  margin: 0.656rem auto 0.8rem;
   text-align: center;
 }
 .main-wrapper .list-box .ansowerd-btn .btn {
   display: block;
-  width: 4rem;
-  height: 1rem;
+  width: 2.768rem;
+  height: 0.736rem;
   margin: 0 auto;
-  line-height: 1rem;
+  line-height: 0.736rem;
   background-color: #6c63ff;
   color: #ffffff;
   font-size: 0.36rem;
@@ -236,8 +250,8 @@
   align-items: center;
 }
 .tips .main-tips {
-  width: 60%;
-  min-height: 6.8rem;
+  width: 9.92rem;
+  height: 6.64rem;
   background-color: #ffffff;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
   border-top: 2px solid #6c63ff;
@@ -259,19 +273,19 @@
 }
 .tips .tips-btn {
   width: 100%;
-  margin: 0.6rem auto 0.6rem;
+  margin: 0.6rem auto 0;
   text-align: center;
 }
 .tips .tips-btn .tbtn {
   display: block;
-  width: 4rem;
-  height: 1rem;
+  width: 2.56rem;
+  height: 0.72rem;
   margin: 0 auto;
-  line-height: 1rem;
+  line-height: 0.72rem;
   background-color: #6c63ff;
   color: #ffffff;
   font-size: 0.36rem;
-  border-radius: 30px;
+  border-radius: 0.72rem;
   border: none;
   outline: none;
 }

@@ -1,7 +1,8 @@
 @fcolor:#5c5a5a;
 .right-wrapper{
-    width: 2.4rem;
+    width: 3.08rem;
     height: 100%;
+    overflow-y: auto;
     box-sizing: border-box;
     background-color: #fff;
     .user-info{
@@ -25,30 +26,40 @@
        } 
     }
     .list{
-        text-indent: 0.3rem;
+        text-indent: 70*0.4*0.02rem;
         .side-title{
             font-size: 0.28rem;
             color: @fcolor;
             margin: 0.2rem 0;
+            &.first-title{
+                margin-top: 150*0.4*0.02rem;
+            }
         }
         .menu{
-            border-bottom: 1px solid #666666;
-            &.after-class{
-                border-bottom: none;
-            }
+
             &>li{
-                line-height: 0.5rem;
-                min-height: 0.5rem;
+                line-height: 60*0.4*0.02rem;
+                min-height: 60*0.4*0.02rem;
+                margin: 40.6*0.04*0.02rem auto;
                 &>a{
                     color: @fcolor;
                     font-size: 0.24rem;
+                    display: block;
+                    width: 255*0.4*0.02rem;
+                    margin: 0 auto;
                     position: relative;
+                    text-indent: 0;
                     .iconfont{
-                        margin-left: 0.02rem;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
                         font-size: 0.2rem;
                         color: #666666;
                     }
-
+                    &.tabborder-bottom{
+                        padding-bottom: 15*0.4*0.02rem;
+                        border-bottom: 1px solid #666666;
+                    }
                 }
                 &.active{
                     background-color: #6C63FF;
@@ -60,7 +71,7 @@
                 .secondary{
                     display: none;
                     li{
-                        text-indent: 0.55rem;
+                        padding-left: 35*0.4*0.02rem;
                         a{
                             font-size: 0.2rem;
                             color: @fcolor;

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title><%= title%></title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="/js/tool/rem.js"></script>
+  <link rel="stylesheet" href="/style/ctool/common.css">
+  <link rel="stylesheet" href="/style/ctool/iconfont.css">
+  <link rel="stylesheet" href="/style/assignGroup.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <!--[if !IE]> -->
+  <script type="text/javascript" src="/js/tool/jquery.js"></script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+          <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+      <![endif]-->
+  <!--[if lt IE 9]>
+          <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <script type="text/javascript" src="/js/tool/layer/layer.js"></script>
+</head>
+<div class="wrapper">
+  <!-- 主内容区域 -->
+  <div class="left-wrapper">
+    <div class="desc-menu">寻找棱锥</div>
+    <!-- 主要内容 -->
+    <div class="main-wrapper">
+        <h3 class="title">分配小组</h3>
+        <div class="main-box clearfix">
+            <div class="main-left">
+                <form action="">
+                    <div class="group-item">
+                        <label>班级</label>
+                        <div class="group-class">
+                            <select name="classd" id="className">
+                                <option value="">数学二组</option>
+                                <option value="">数学二组</option>
+                                <option value="">数学二组</option>
+                                <option value="">数学二组</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <label>分组方式</label>
+                        <div class="group-type-box clearfix">
+                            <label class="choose" for="sj"><input type="radio" name="grouptype" id="sj" value="1" checked>随机分组<span></span></label>
+                            <label class="choose" for="sd" ><input type="radio" name="grouptype" id="sd"  value="2">手动分组<span></span></label>
+                            <label class="choose" for="sex"><input type="radio" name="grouptype" id="sex" value="3">性别分组<span></span></label>
+                            <label class="choose" for="yz"><input type="radio" name="grouptype" id="yz" value="4">异质分组<span></span></label>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <label for="">每组人数</label>
+                        <div class="group-process-box change-process-box">
+                            <div class="group-process change-process">
+                                <p><i></i></p>
+                            </div>
+                            <input type="text" readonly name="num" value="4人" id="group-num">
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <label for="">小组数量</label>
+                        <div class="group-process-box change-process-box">
+                            <div class="group-process change-process">
+                                <p><i></i></p>
+                            </div>
+                            <input type="text" readonly name="num" value="4组" id="group-num">
+                        </div>
+                    </div>
+                    <div class="group-desc">
+                        <h3>分组说明</h3>
+                        <p>1、异质分组是按照课前练习的成绩进行分组</p>
+                        <p>2、“分组人数”和“小组数量”中确顶一个参数，另外一个参数会自动调整</p>
+                        <p>3、点击学生头像即可指定组长</p>
+                    </div>
+                    <div class="group-submit"><a href="javascript:void(0)" class="sbtn">确认分组</a></div>
+                </form>
+            </div>
+            <div class="main-right">
+                <div class="refresh-box"><a href=""><img src="/images/refresh.png" alt="refresh.png"></a></div>
+                <div class="group-wrapper clearfix">
+                    <%for(var i=0;i<4;i++){%>
+                    <div class="item clearfix">
+                        <div class="item-left">A组</div>
+                        <div class="item-right">
+                            <%for(var k=0;k<4;k++){%>
+                            <div class="sub-item">
+                                <img src="/images/default.png" alt="default">
+                                <p>流星雨</p>
+                            </div>
+                            <%}%>
+                        </div>
+                    </div>
+                    <%}%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tips">
+        <div class="main-tips">
+            <img class="tip-img" src="/images/default.png" alt="">
+            <p class="tips-title">确认分组</p>
+            <div class="tips-msg">
+                <p>已完成小组分配，每组4人，共4组！</p>
+            </div>
+            <div class="tips-btn"><button class="cbtn tbtn">确认</button></div>
+        </div>
+    </div>
+  </div>
+  <!-- 右边导航部分 -->
+  <%-include("share/sidebar")%>
+</div>
+<script src="/js/tool/landscape.js"></script>
+<script src="/js/common.js"></script>
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= title%></title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="/js/tool/rem.js"></script>
+  <link rel="stylesheet" href="/style/ctool/common.css">
+  <link rel="stylesheet" href="/style/ctool/iconfont.css">
+  <link rel="stylesheet" href="/style/teaShareDetail.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <!--[if !IE]> -->
+  <script type="text/javascript" src="/js/tool/jquery.js"></script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+          <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+      <![endif]-->
+  <!--[if lt IE 9]>
+          <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <script type="text/javascript" src="/js/tool/layer/layer.js"></script>
+</head>
+<div class="wrapper">
+  <!-- 主内容区域 -->
+  <div class="left-wrapper">
+    <div class="desc-menu">作业分享</div>
+    <!-- 主要内容 -->
+    <div class="main-wrapper">
+        <div class="main-box">
+            <div class="desc-box clearfix">
+                <div class="desc-left">
+                    <img src="/images/default.png" alt="default">
+                    <p class="desc-name">流星雨</p>
+                </div>
+                <div class="desc-right">
+                    <p class="desc-detail">现实生活中的棱锥有：金字塔、三脚架、脚手架、某些特别的建筑物的锥形顶、正方体的
+                        一角、自行车反光镜的锥形突出、幸运星的一半等等；
+                        古代有锥形漏斗和锥形容器、量器。
+                    </p>
+                    <div class="desc-images clearfix">
+                        <img src="/images/group-pic.png" alt="group-pic">
+                        <img src="/images/group-pic.png" alt="group-pic">
+                        <img src="/images/group-pic.png" alt="group-pic">
+                        <img src="/images/group-pic.png" alt="group-pic">
+                        <img src="/images/group-pic.png" alt="group-pic">
+                    </div>
+                    <div class="desc-btns">
+                        <a href=""><i class="iconfont icon-xin"></i>赞</a>
+                        <a href=""><i class="iconfont icon-guanbi"></i>评论</a>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-box">
+                <div class="zan-box">
+                    <div class="icon-box clearfix">
+                        <p class="left-icon"><i class="iconfont icon-xin"></i></p>
+                        <div class="zan-wrapper">
+                            <img src="/images/default.png" alt="default">
+                            <img src="/images/default.png" alt="default">
+                            <img src="/images/default.png" alt="default">
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-box">
+                    <div class="icon-box clearfix">
+                        <p class="left-icon"><i class="iconfont icon-xin"></i></p>
+                        <div class="comment-wrapper">
+                            <div class="list clearfix">
+                                <div class="left-icon">
+                                    <img src="/images/default.png" alt="default">
+                                    <p class="comment-name">叶小雨</p>
+                                </div>
+                                <p class="comment-detail">回复 <span>叶小雨：</span> 很不错的分享，学习了！</p>
+                            </div>
+                            <%for(var i=0;i<3;i++){%>
+                            <div class="list clearfix">
+                                <div class="left-icon">
+                                     <img src="/images/default.png" alt="default">
+                                     <p class="comment-name">叶小雨</p>
+                                </div>
+                                <p class="comment-detail">很不错的分享，学习了！</p>
+                            </div>
+                            <%}%>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="input-box clearfix">
+                    <input type="text" placeholder="评论">
+                    <a href="javascript:void(0)"><i class="iconfont icon-xiaolian"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- 右边导航部分 -->
+  <%-include("share/sidebar")%>
+</div>
+<script src="/js/tool/landscape.js"></script>
+<script src="/js/common.js"></script>
+<body>
+
+</body>
+
+</html>

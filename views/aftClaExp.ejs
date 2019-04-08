@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title><%= title%></title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"> -->
+  <script src="/js/tool/rem.js"></script>
+  <link rel="stylesheet" href="/style/ctool/common.css">
+  <link rel="stylesheet" href="/style/ctool/iconfont.css">
+  <link rel="stylesheet" href="/style/aftClaExp.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <!--[if !IE]> -->
+  <script type="text/javascript" src="/js/tool/jquery.js"></script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+          <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+      <![endif]-->
+  <!--[if lt IE 9]>
+          <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <script type="text/javascript" src="/js/tool/layer/layer.js"></script>
+</head>
+<div class="wrapper">
+  <!-- 主内容区域 -->
+  <div class="left-wrapper">
+    <div class="desc-menu">课后实验</div>
+    <!-- 主要内容 -->
+    <div class="main-wrapper">
+        <h3 class="title">任务详情</h3>
+        <div class="main-box">
+            <div class="main-top-box clearfix">
+                <div class="req-box">
+                    <p>经过本堂课的学习，我们认识了棱锥，学习了正三棱锥的侧面积、表面积以及
+                            体积的计算公式，那斜棱锥的体积该如何计算呢？请根据正三棱锥的体积计算
+                            公式结合应用GGB软件探究思考斜棱锥的体积公式。
+                    </p>
+                    <p class="formula">正三棱锥的体积公式：</p>
+                </div>
+                <div class="req-img"><img src="/images/group-pic.png" alt=""></div>
+            </div>
+            <div class="answer-box">
+                <p class="answer-title">答案：</p>
+                <div class="answer-input"><input type="text" placeholder="请输入答案"></div>
+            </div>
+            <div class="btn-box"><a href="javascript:void(0)">提交答案</a></div>
+        </div>
+        
+    </div>
+  </div>
+  <!-- 右边导航部分 -->
+  <%-include("share/sidebar")%>
+</div>
+<script src="/js/tool/landscape.js"></script>
+<script src="/js/common.js"></script>
+<body>
+
+</body>
+
+</html>

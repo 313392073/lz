@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= title%></title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="/js/tool/rem.js"></script>
+  <link rel="stylesheet" href="/style/ctool/common.css">
+  <link rel="stylesheet" href="/style/ctool/iconfont.css">
+  <link rel="stylesheet" href="/style/teaHomeworkSharebase.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <!--[if !IE]> -->
+  <script type="text/javascript" src="/js/tool/jquery.js"></script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+          <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+      <![endif]-->
+  <!--[if lt IE 9]>
+          <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <script type="text/javascript" src="/js/tool/layer/layer.js"></script>
+</head>
+<div class="wrapper">
+  <!-- 主内容区域 -->
+  <div class="left-wrapper">
+    <div class="desc-menu">寻找棱锥</div>
+    <!-- 主要内容 -->
+    <div class="main-wrapper">
+        <h3 class="title">分配小组</h3>
+        <div class="main-box">
+            <div class="group-wrapper clearfix">
+                <%for(var i=0;i<4;i++){%>
+                <div class="item clearfix">
+                    <p class="group-name">A组</p>
+                    <%for(var k=0;k<4;k++){%>
+                    <div class="sub-item">
+                        <div class="not-upload"><img src="/images/noupload.png" alt="noupload"></div>
+                    </div>
+                    <%}%>
+                </div>
+                <%}%>
+            </div>
+        </div>
+    </div>
+
+    <div class="share-wrapper">
+        <div class="share-box">
+            <div class="share-detail">
+                <textarea name="" cols="3" rows="5" placeholder="哈哈哈"></textarea>
+            </div>
+            <div class="share-pic clearfix">
+                <div class="share-item">
+                    <img src="/images/group-pic.png" alt="group-pic">
+                </div>
+                <div class="share-item upload-btn">+</div>
+            </div>
+            <div class="share-btns">
+                <a href="javascript:void(0)">取消</a>
+                <a href="javascript:void(0)" class="active">分享</a>
+            </div>
+            <div class="tips-box">
+                <div class="tips-wrapper">
+                    <p class="tips-msg">将此次编辑保留？</p>
+                    <div class="tips-btns clearfix">
+                        <a href="javascript:void(0)" class="not-save">不保留</a>
+                        <a href="javascript:void(0)" class="save active">保留</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- 右边导航部分 -->
+  <%-include("share/sidebar")%>
+</div>
+<script src="/js/tool/landscape.js"></script>
+<script src="/js/common.js"></script>
+<body>
+
+</body>
+
+</html>

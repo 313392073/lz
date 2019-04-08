@@ -1,6 +1,7 @@
 .right-wrapper {
-  width: 2.4rem;
+  width: 3.08rem;
   height: 100%;
+  overflow-y: auto;
   box-sizing: border-box;
   background-color: #fff;
 }
@@ -25,32 +26,40 @@
   border-radius: 50%;
 }
 .right-wrapper .list {
-  text-indent: 0.3rem;
+  text-indent: 0.56rem;
 }
 .right-wrapper .list .side-title {
   font-size: 0.28rem;
   color: #5c5a5a;
   margin: 0.2rem 0;
 }
-.right-wrapper .list .menu {
-  border-bottom: 1px solid #666666;
-}
-.right-wrapper .list .menu.after-class {
-  border-bottom: none;
+.right-wrapper .list .side-title.first-title {
+  margin-top: 1.2rem;
 }
 .right-wrapper .list .menu > li {
-  line-height: 0.5rem;
-  min-height: 0.5rem;
+  line-height: 0.48rem;
+  min-height: 0.48rem;
+  margin: 0.03248rem auto;
 }
 .right-wrapper .list .menu > li > a {
   color: #5c5a5a;
   font-size: 0.24rem;
+  display: block;
+  width: 2.04rem;
+  margin: 0 auto;
   position: relative;
+  text-indent: 0;
 }
 .right-wrapper .list .menu > li > a .iconfont {
-  margin-left: 0.02rem;
+  position: absolute;
+  right: 0;
+  top: 0;
   font-size: 0.2rem;
   color: #666666;
+}
+.right-wrapper .list .menu > li > a.tabborder-bottom {
+  padding-bottom: 0.12rem;
+  border-bottom: 1px solid #666666;
 }
 .right-wrapper .list .menu > li.active {
   background-color: #6C63FF;
@@ -63,7 +72,7 @@
   display: none;
 }
 .right-wrapper .list .menu > li .secondary li {
-  text-indent: 0.55rem;
+  padding-left: 0.28rem;
 }
 .right-wrapper .list .menu > li .secondary li a {
   font-size: 0.2rem;

@@ -14,11 +14,11 @@
   width: 40%;
   height: 100%;
   background-color: #6058e5;
+  position: relative;
 }
 .wrapper .right-wrapper .info-box {
   width: 67%;
   margin: 0 auto;
-  position: relative;
 }
 .wrapper .right-wrapper .info-box .reg-title {
   width: 100%;
@@ -42,28 +42,28 @@
   text-align: center;
 }
 .wrapper .right-wrapper .info-box .headpic img {
-  width: 5rem;
-  height: 5rem;
+  width: 102px;
+  height: 102px;
 }
 .wrapper .right-wrapper .info-box .item {
-  min-height: 3rem;
-  line-height: 3rem;
-  margin-bottom: 0.6rem;
+  min-height: 18px;
+  line-height: 18px;
+  margin-top: 34px;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
   padding-left: 8px;
 }
 .wrapper .right-wrapper .info-box .item .header-box {
-  width: 6rem;
-  height: 6rem;
+  width: 102px;
+  height: 102px;
   margin: 0 auto;
   border-radius: 50%;
   text-align: center;
 }
 .wrapper .right-wrapper .info-box .item .header-box .upload-pic {
   border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
+  width: 102px;
+  height: 102px;
   margin: 0 auto;
 }
 .wrapper .right-wrapper .info-box .item .header-box .upload-file {
@@ -73,13 +73,12 @@
   display: inline-block;
   min-width: 24%;
   font-size: 16px;
+  margin-bottom: 18px;
 }
 .wrapper .right-wrapper .info-box .item .choose {
   display: inline-block;
-  min-height: 0.8rem;
-  line-height: 0.8rem;
+  margin-bottom: 18px;
   margin-left: 1rem;
-  vertical-align: middle;
   font-size: 16px;
   cursor: pointer;
 }
@@ -120,15 +119,18 @@
 .wrapper .right-wrapper .info-box .item.header-item {
   border-bottom: none;
 }
+.wrapper .right-wrapper .info-box .item.header-item .desc {
+  margin-bottom: 0;
+}
 .wrapper .right-wrapper .info-box .login-btn {
   margin: 2rem auto 1.4rem;
 }
 .wrapper .right-wrapper .info-box .login-btn .sbtn {
   display: block;
   width: 100%;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 25px;
+  height: 47.2px;
+  line-height: 47.2px;
+  border-radius: 47.2px;
   text-align: center;
   color: #ffffff;
   background-color: #3acc6c;
@@ -155,73 +157,83 @@
   color: #ffffff;
 }
 .wrapper .right-wrapper .info-box.find-box .item {
-  height: 4rem;
-  line-height: 4rem;
+  min-height: 36px;
+  line-height: 36px;
   padding-left: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 36px;
 }
 .wrapper .right-wrapper .info-box.find-box .item .info {
-  line-height: 4rem;
-  height: 4rem;
+  line-height: 36px;
+  height: 36px;
 }
 .wrapper .right-wrapper .info-box.find-box .login-btn {
-  margin-top: 3rem;
+  margin-top: 38px;
 }
-.wrapper .right-wrapper .info-box .tips {
+.wrapper .right-wrapper .info-box.reg-box .item {
+  min-height: 36px;
+  line-height: 36px;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+.wrapper .right-wrapper .info-box.reg-box .item .info {
+  height: 36px;
+  line-height: 36px;
+}
+.wrapper .right-wrapper .info-box.reg-box .login-btn {
+  margin-top: 38px;
+}
+.wrapper .right-wrapper .tips {
   display: none;
   width: 100%;
-  height: 12.7rem;
+  height: 100%;
   position: absolute;
-  z-index: 999;
-  top: 50%;
   left: 0;
+  top: 0;
+  background-color: transparent;
+}
+.wrapper .right-wrapper .tips .tips-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 286px;
+  height: 170px;
   background-color: #ffffff;
   border-radius: 12px;
-  color: #333333;
+  color: #4b4b5b;
 }
-.wrapper .right-wrapper .info-box .tips .tips-title {
+.wrapper .right-wrapper .tips .tips-wrapper .tips-title {
   text-align: center;
-  line-height: 4rem;
-  height: 4rem;
+  line-height: 60px;
+  height: 60px;
   font-size: 22px;
 }
-.wrapper .right-wrapper .info-box .tips .tips-msg {
+.wrapper .right-wrapper .tips .tips-wrapper .tips-msg {
   width: 80%;
   margin: 0 auto;
-  line-height: 2rem;
-  font-size: 16px;
+  line-height: 22px;
+  font-size: 15.2px;
   text-align: center;
 }
-.wrapper .right-wrapper .info-box .tips .btn-box {
+.wrapper .right-wrapper .tips .tips-wrapper .btn-box {
   width: 100%;
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 3rem;
-  line-height: 3rem;
+  height: 46px;
+  line-height: 46px;
   border-top: 1px solid #dddddd;
 }
-.wrapper .right-wrapper .info-box .tips .btn-box a {
+.wrapper .right-wrapper .tips .tips-wrapper .btn-box a {
   float: left;
   width: 50%;
   text-align: center;
-  color: #333333;
-  font-size: 20px;
+  color: #4b4b5b;
+  font-size: 16px;
 }
-.wrapper .right-wrapper .info-box .tips .btn-box a.go-msg {
+.wrapper .right-wrapper .tips .tips-wrapper .btn-box a.go-msg {
   border-right: 1px solid #dddddd;
   width: calc(50% - 1px);
-}
-.wrapper .right-wrapper .info-box.reg-box .item {
-  min-height: 4rem;
-  line-height: 4rem;
-  padding-left: 0;
-  margin-bottom: 2rem;
-}
-.wrapper .right-wrapper .info-box.reg-box .item .info {
-  line-height: 4rem;
-  height: 4rem;
-}
-.wrapper .right-wrapper .info-box.reg-box .login-btn {
-  margin-top: 3rem;
 }

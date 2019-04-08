@@ -49,7 +49,7 @@ gulp.task('less', function () {
 
 //压缩css
 gulp.task('css',function () {
-    return gulp.src('public/style/**/*.css')
+    return gulp.src('public/style/ctool/*.css')
         .pipe(css({compatibility: 'ie6'}))
         .pipe(minify())
         .pipe(gulp.dest('dist/style/'));

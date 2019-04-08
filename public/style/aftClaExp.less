@@ -1,0 +1,80 @@
+@import './ctool/base.less';
+@fcolor:#5c5a5a;
+.main-wrapper{
+    height: calc(~"100% - 1.6rem");
+    overflow-y:auto; 
+    .title{
+        height: 160*0.4*0.02rem;
+        line-height: 160*0.4*0.02rem;
+        text-align: center;
+        font-size: 44*0.4*0.02rem;
+        color: @fcolor;
+    }
+    .main-box{
+        width: 86.175%;
+        margin: 0 auto 70*0.4*0.02rem;
+        .main-top-box{
+            width: 100%;
+            min-height: 625*0.4*0.02rem;
+            .req-box{
+                float: left;
+                width: 63%;
+                padding: 0 40*0.4*0.02rem;
+                font-size: 30*0.4*0.02rem;
+                color: @fcolor;
+                line-height: 50*0.4*0.02rem;
+                .formula{
+                    margin-top: 50*0.4*0.02rem;
+                }
+            }
+            .req-img{
+                float: left;
+                width: 37%;
+                img{
+                    max-width: 90%;
+                    height: auto;
+                }
+            }
+        }
+        .answer-box{
+            font-size: 30*0.4*0.02rem;
+            color: @fcolor;
+            .answer-input{
+                width: 80%;
+                margin: 30*0.4*0.02rem auto;
+                height: 80*0.4*0.02rem;
+                line-height: 80*0.4*0.02rem;
+                border-bottom: 1px solid #b7c0cd;
+                input{
+                    display: block;
+                    width: 100%;
+                    padding: 10*0.4*0.02rem;
+                    text-align: center;
+                    border: none;
+                    outline: none;
+                    font-size: 30*0.4*0.02rem;
+                    color: @fcolor;
+                }
+            }
+        }
+      
+        .btn-box{
+            width: 100%;
+            margin: 100*0.4*0.02rem auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                width: 330*0.4*0.02rem;
+                height: 104*0.4*0.02rem;
+                line-height: 104*0.4*0.02rem;
+                background-color: #6c63ff;
+                color: #ffffff;
+                font-size: 35*0.4*0.02rem;
+                text-align: center;
+                margin: auto;
+                border-radius: 104*0.4*0.02rem;
+            }
+        }
+    }
+}
