@@ -13,11 +13,22 @@ var rev = require('gulp-rev'); //- 对文件名加MD5后缀
 var revCollector = require('gulp-rev-collector');  //- 路径替换  
 var rename = require('gulp-rename');//- 文件重名
 var runSequence = require('run-sequence'); //- 执行顺序
+var ejs = require('gulp-ejs');
+
+
+
 
 // 删除文件
 gulp.task('clean', function(cb) {
     del(['./dist','./rev'],cb)
 });
+
+
+// gulp.task('ejs', function() {
+//     gulp.src('views/index.ejs')
+//         .pipe(ejs({},{ext: '.html'}))
+//     .pipe(gulp.dest('dist'));
+// });
 
 //压缩js
 gulp.task('js', function () {
@@ -74,7 +85,7 @@ gulp.task('font', function () {
         .pipe(gulp.dest('dist/style/font/'));
 });
 
-// 压缩ejs
+// // 压缩ejs
 gulp.task('ejs', function() {
   return gulp.src('views/**/*.ejs')
    .pipe(htmlmin({collapseWhitespace: true}))

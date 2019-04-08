@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title><%= title%></title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport"
+    name="viewport">
+  <script src="/js/tool/rem.js"></script>
+  <link rel="stylesheet" href="/style/ctool/common.css">
+  <link rel="stylesheet" href="/style/videoList.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <!--[if !IE]> -->
+  <script type="text/javascript" src="/js/tool/jquery.js"></script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+          <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+      <![endif]-->
+  <!--[if lt IE 9]>
+          <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <script type="text/javascript" src="/js/tool/layer/layer.js"></script>
+</head>
+<div class="wrapper">
+  <!-- 主内容区域 -->
+  <div class="left-wrapper">
+    <div class="desc-menu">寻找棱锥</div>
+    <!-- 主要内容 -->
+    <div class="main-wrapper">
+        <h3 class="title">视频上传列表</h3>
+        <div class="list-box clearfix">
+            <div class="list">
+                <%for(var i=0;i<4;i++){%>
+                <div class="item">
+                    <p class="list-name">A组</p>
+                    <div class="item clearfix">
+                        <div class="item-cover"><img src="/images/default.png" alt=""></div>
+                        <div class="item-msg">
+                            <div class="item-headerpic"><img src="/images/default.png" alt=""></div>
+                            <p class="item-name">流星雨</p>
+                            <a class="item-play" href="javascript:void(0)">播放</a>
+                        </div>
+                    </div>
+                </div>
+                <%}%>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- 右边导航部分 -->
+  <%-include("share/sidebar")%>
+</div>
+<script src="/js/tool/landscape.js"></script>
+<script type="text/javascript">
+  $(".btn").on("click",function(){
+    var answer1 =  $.trim($('input:radio[name="req1"]:checked').val());
+    var answer2 = $.trim($(".req2").val());
+    $.ajax({
+      type:'post',
+      url:'',
+      dataType:'json',
+      data:{'answer1':answer1,'answer2':answer1},
+      success:function(res){
+        if(res){
+
+        }else{
+          
+        }
+      }
+    })
+  })
+  //继续答题
+  $(".gbtn").on("click",function(){
+    $(".tips").removeClass('active');
+  })
+  //查看成绩
+  $(".cbtn").on("click",function(){
+    window.location.href = '/login.html'
+  })
+</script>
+<body>
+
+</body>
+
+</html>
